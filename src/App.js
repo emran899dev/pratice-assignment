@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className='bg-dark'>
       
 
       <Card
@@ -39,8 +39,8 @@ function App() {
             </Card.Body>
           </Card>
 
-      <UserCard userCount={userCount}></UserCard>
-      <UserAll User={users}  key={users.phone} handelAddUser={handelAddUser}></UserAll>
+      <UserCard userCount={userCount} ></UserCard>
+      <UserAll User={users}  handelAddUser={handelAddUser}></UserAll>
       
     </div>
   );

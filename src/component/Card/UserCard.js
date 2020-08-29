@@ -5,8 +5,6 @@ import Columns from 'react-columns'
 const UserCard = (props) => {
     const user = props.userCount
 
-
-
     let allU = user.map(user => {
         const {name,picture,gender,salary} = user
         const fullName = `${user.name.title } ${user.name.first } ${user.name.last}`
@@ -48,7 +46,7 @@ const UserCard = (props) => {
         totalSalary += numSalary;
     }
     return (
-        <div>
+        <div className='bg-dark'>
             {/* <h2>Added Users: {user.length}</h2> */}
             {/* <h3>Added Users Salary: {totalSalary}</h3> */}
 
@@ -60,7 +58,6 @@ const UserCard = (props) => {
           >
             <Card.Body>
               <Card.Title><h2>Added Users: {user.length}</h2> </Card.Title>
-    
               <Card.Text> <h3>Added Users Salary: {totalSalary}</h3></Card.Text>
               
             </Card.Body>

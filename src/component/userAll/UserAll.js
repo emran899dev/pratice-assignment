@@ -49,7 +49,7 @@ const UserAll = (props) => {
   // <Columns queries={queries}>{allUsers}</Columns>
     
         return (
-        <div>
+        <div className='bg-dark'>
           <Card
             bg="light"
             text="dark"
