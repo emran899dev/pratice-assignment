@@ -1,8 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
 import Columns from 'react-columns'
+
 
 const UserAll = (props) => {
   // console.log(props.User);
@@ -32,7 +35,7 @@ const UserAll = (props) => {
           
         </Card.Body>
         <Card.Footer>
-                <Button variant="danger" className="px-5" onClick={() => props.handelAddUser( user )}> Added User</Button>
+                <Button variant="danger" className="px-5" onClick={() => props.handelAddUser( user )}><FontAwesomeIcon icon={faCoffee} /> Added User</Button>
             </Card.Footer>
       </Card>
     )
